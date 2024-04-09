@@ -2,5 +2,10 @@
 
 ## Instructions
 Simple get this code to run on a windows machine with Microsoft defender or other AV on it. 
-the commented out code is a reverse shell in a binary format it is not active but just in case I have commented out the code and just have a print statment below. 
-Do NOT remove any of the commented code as this is what is being triggered and you need to obuscate 
+the Shell code is the malicous payload and needs to be pulled into the script in some way without changing the content, this does not mean you cannot change the format of it
+
+the try expect statment is meant to escape to print (This is rocking) if it does not then you have just installed a backdoor so don't try to fix those errors 
+
+The shell code is defanged so it should never call back but better safe than sorry 
+
+### Your aim is to get the code to run to print (This is rocking) and ("congrats Im a hidden malware") without being flagged by AV software
